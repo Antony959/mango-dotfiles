@@ -1,0 +1,21 @@
+[opener]
+# Visualizar imagens
+qview = [
+	{ run = 'qview "$@"', orphan = true, desc = "Qview", for = "linux" },
+]
+
+# Editar imagens
+lutgen = [
+	{ run = 'lutgen-studio "$@"', orphan = true, desc = "lutgen-studio", for = "linux" },
+]
+
+# Mantém o opener padrão do sistema se quiser
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+]
+
+[open]
+prepend_rules = [
+	# Para imagens: Qview como padrão + lutgen como opção extra
+	{ mime = "image/*", use = [ "qview", "lutgen", "open" ] },
+]

@@ -1,0 +1,113 @@
+/* Everforest Dark Medium - Waypaper theme */
+
+/* Background principal */
+window {
+    background-color: #2D353B;
+}
+
+/* Área de conteúdo / fundo geral */
+box, grid {
+    background-color: #2D353B;
+}
+
+/* Botões normais */
+button {
+    background-color: #343F44;
+    color: #D3C6AA;
+    border: 1px solid #475258;
+    border-radius: 2px;
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Hover nos botões */
+button:hover {
+    background-color: #3D484D;
+    border-color: #A7C080;
+    color: #D3C6AA;
+    background-image: none;
+    box-shadow: none;
+}
+
+button:hover > image {
+    -gtk-icon-shadow: none;
+    -gtk-icon-effect: none;
+}
+
+/* Botão selecionado / destacado */
+.highlighted-button {
+    background-color: #425047;
+    border-color: #A7C080;
+    color: #D3C6AA;
+    background-image: none;
+    box-shadow: none;
+}
+
+.highlighted-button > image,
+.highlighted-button:hover > image {
+    -gtk-icon-effect: none;
+}
+
+/* Labels e textos */
+label {
+    color: #D3C6AA;
+}
+
+/* Entry / campos de texto */
+entry {
+    background-color: #343F44;
+    color: #D3C6AA;
+    border: 1px solid #475258;
+    border-radius: 4px;
+    caret-color: #A7C080;
+}
+
+entry:focus {
+    border-color: #A7C080;
+}
+
+/* Combobox / dropdowns */
+combobox button {
+    background-color: #343F44;
+    color: #D3C6AA;
+    border: 1px solid #475258;
+}
+
+/* Scrollbar */
+scrollbar {
+    background-color: #2D353B;
+}
+
+scrollbar slider {
+    background-color: #475258;
+    border-radius: 4px;
+    min-width: 8px;
+    min-height: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: #A7C080;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: #343F44;
+    color: #D3C6AA;
+    border: 1px solid #475258;
+}
+
+tooltip label {
+    color: #D3C6AA;
+}
+
+/* Header / toolbar se existir */
+headerbar, toolbar {
+    background-color: #232A2E;
+    color: #D3C6AA;
+    border-bottom: 1px solid #475258;
+}
+
+/* Separadores */
+separator {
+    background-color: #475258;
+}

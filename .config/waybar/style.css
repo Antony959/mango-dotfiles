@@ -1,0 +1,129 @@
+* {
+    border: none;
+    border-radius: 2;
+    font-family: "ZedMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #95C056;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    border: 0px solid #A7C080;
+}
+
+#custom-spotify,
+#custom-notification,
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#bluetooth,
+#mango-window,
+#tray {
+    background-color: #2D353B;
+    color: #D3C6AA;
+    margin: 4px 3px;
+    padding: 0px 12px;
+    border: 2px solid #A7C080;
+    transition: all 0.3s ease;
+}
+
+#workspaces {
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 4px 1px;
+    color: #83C092;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* prepara a barra */
+}
+
+#workspaces button.active {
+    color: #DBBC7F;
+    background-color: transparent;
+    border-bottom: 2px solid #DBBC7F; /* barra amarela embaixo do número */
+}
+
+#workspaces button:hover {
+    color: #D3C6AA;
+    background-color: rgba(167, 192, 128, 0.3);
+}
+
+#clock {
+    color: #A7C080;
+    font-weight: bold;
+        color: #D3C6AA;
+}
+
+#clock:hover {
+    background-color: #A7C080;
+    color: #2D353B;
+}
+
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#bluetooth:hover,
+#mango-window:hover {
+    background-color: #A7C080;
+    color: #2D353B;
+}
+
+#pulseaudio.muted,
+#pulseaudio.source-muted,
+#bluetooth.disabled,
+#bluetooth.off {
+    color: #E67E80;
+    border-color: #2D353B;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #E67E80;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 6px;
+}
+
+.modules-right > widget:last-child > #tray {
+    margin-right: 6px;
+}
+
+#cpu.not-memory,
+#memory.not-memory,
+#pulseaudio.not-audio {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Tooltip */
+tooltip {
+    background: rgba(45, 53, 59, 0.95);
+    border: 2px solid #A7C080;
+    color: #D3C6AA;
+}
+
+tooltip label {
+    color: #D3C6AA;
+}
+#workspaces button:nth-child(n+6) {
+    font-size: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 0;
+}

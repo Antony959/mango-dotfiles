@@ -1,0 +1,25 @@
+[ExtractDialog]
+1920x1080 screen: Height=540
+1920x1080 screen: Width=1280
+DirHistory[$e]=/mnt/jogoshdd/,/mnt/jogosSSD/
+
+[General]
+Version=202
+ViewPropsTimestamp=2026,6,6,12,2,29.152
+
+[IconsMode]
+IconSize=64
+PreviewSize=96
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=fontthumbnail,ffmpegthumbs,audiothumbnail,djvuthumbnail,blenderthumbnail,quithumbnail,mobithumbnail,gsthumbnail,rawthumbnail,glycin-heif,comicbookthumbnail,opendocumentthumbnail,kraorathumbnail,ebookthumbnail,windowsexethumbnail,glycin-image-rs,glycin-svg,imagethumbnail,windowsimagethumbnail,exrthumbnail,jpegthumbnail,svgthumbnail,glycin-jxl,directorythumbnail
+
+[UiSettings]
+ColorScheme=EverforestDarkMedium

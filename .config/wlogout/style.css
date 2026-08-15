@@ -1,0 +1,82 @@
+/* Paleta Everforest Dark Medium */
+@define-color bg0 #2d353b;
+@define-color bg0_alpha rgba(45, 53, 59, 0.85); /* Fundo com transparência */
+@define-color bg1 #343f44;
+@define-color fg #d3c6aa;
+
+/* Cores de destaque (Accents) */
+@define-color blue #7fbbb3;
+
+* {
+    background-image: none;
+    font-size: 20px;
+    font-family: "JetBrains Mono NFM", monospace;
+}
+
+window {
+    background-color: @bg0_alpha;
+}
+
+button {
+    margin: 15px;
+    color: @fg;
+    background-color: #232A2E;
+    border-radius: 3px; /* Mude para 0px se preferir cantos perfeitamente quadrados */
+    border: 2px solid @bg1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    box-shadow: none;
+    text-shadow: none;
+    /* Adiciona uma transição suave ao passar o mouse */
+    transition: all 0.2s ease-in-out; 
+}
+
+button:hover,
+button:focus {
+    background-color: @bg2;
+    background-size: 25%;
+    outline-style: none;
+}
+
+/* --- Botões Individuais e Cores no Hover --- */
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+#logout:hover, 
+#logout:focus {
+    border-color: #A7C080;
+    color: @green;
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover, 
+#shutdown:focus {
+    border-color: #A7C080;
+    color: @red;
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover, 
+#reboot:focus {
+    border-color: #A7C080;
+    color: @yellow;
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover, 
+#lock:focus {
+    border-color: @blue;
+    color: @blue;
+}
+
+button span {
+    font-size: 1.1em;
+}
