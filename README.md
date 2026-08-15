@@ -1,4 +1,4 @@
-# Everforest-Dark-Medium | Mangowm
+# Mangowm | Everforest-Dark-Medium
 
 <img width="1915" height="1070" alt="Image" src="https://github.com/user-attachments/assets/31bb2c88-cc50-44ad-bac6-9e51d1553b67" />
 
